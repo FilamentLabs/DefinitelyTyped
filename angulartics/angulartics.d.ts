@@ -28,20 +28,20 @@ declare module angulartics {
 
         registerPageTrack(callback:(path:string, location?:angular.ILocationService) => any): void;
         registerEventTrack(callback: (eventName: string, properties?: any) => any): void;
-        registerSetAlias(callback: (alias: string) => any): void
-        registerSetUsername(callback: (username: string) => any): void
-        registerSetUserProperties(callback: (userProperties: any) => any): void
-        registerSetSuperProperties(callback: (superProperties: any) => any): void
+        registerSetAlias(callback: (alias: string) => any): void;
+        registerSetUsername(callback: (username: string) => any): void;
+        registerSetUserProperties(callback: (userProperties: any) => any): void;
+        registerSetSuperProperties(callback: (superProperties: any) => any): void;
         
         settings: { 
             pageTracking: { 
-                autoTrackingVirtualPages: boolean,
-                autoTrackingFirstPage: boolean,
-                basePath: string,
-                autoBasePath: boolean
-            },
-            developerMode: boolean
-        }
+                autoTrackingVirtualPages: boolean;
+                autoTrackingFirstPage: boolean;
+                basePath: string;
+                autoBasePath: boolean;
+            };
+            developerMode: boolean;
+        };
     }
 }
 
